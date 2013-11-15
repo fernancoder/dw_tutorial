@@ -1,11 +1,11 @@
-#ifndef GESOSRVACTION_H_
-#define GESOSRVACTION_H_
+#ifndef GEOSRVACTION_H_
+#define GEOSRVACTION_H_
 
 #include "daework-include.h"
 #include "daework-kernel.h"
 #include "daework-support.h"
 
-class GesosrvAction : public Action
+class GeosrvAction : public Action
 {
   public:
     bool verifyParam(string param, int errorId, string errorMsg);
@@ -14,4 +14,4 @@ class GesosrvAction : public Action
     void processError(int errorId, string errorMsg);
 };
 
-#endif /* GESOSRVACTION_H_ */
+#endif /* GEOSRVACTION_H_ */

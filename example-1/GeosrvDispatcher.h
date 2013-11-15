@@ -1,14 +1,14 @@
-#ifndef GESOSRVDISPATCHER_H_
-#define GESOSRVDISPATCHER_H_
+#ifndef GEOSRVDISPATCHER_H_
+#define GEOSRVDISPATCHER_H_
 
 #include "daework-kernel.h"
 
 
-class GesosrvDispatcher : public Dispatcher
+class GeosrvDispatcher : public Dispatcher
 {
         public:
                 Action *getHandler(string action);
 
 };
 
-#endif /* GESOSRVDISPATCHER_H_ */
+#endif /* GEOSRVDISPATCHER_H_ */

@@ -1,18 +1,18 @@
-#include "GesosrvServer.h"
-#include "GesosrvDispatcher.h"
-#include "GesosrvThread.h"
+#include "GeosrvServer.h"
+#include "GeosrvDispatcher.h"
+#include "GeosrvThread.h"
 
-void GesosrvServer::init()
+void GeosrvServer::init()
 {
 
 }
 
-Thread *GesosrvServer::createThreadObject()
+Thread *GeosrvServer::createThreadObject()
 {
-        return (Thread *)(new GesosrvThread());
+        return (Thread *)(new GeosrvThread());
 }
 
-Dispatcher *GesosrvServer::createDispatcherObject()
+Dispatcher *GeosrvServer::createDispatcherObject()
 {
-        return (Dispatcher *)(new GesosrvDispatcher());
+        return (Dispatcher *)(new GeosrvDispatcher());
 }

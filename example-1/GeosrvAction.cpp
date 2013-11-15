@@ -1,7 +1,7 @@
-#include "GesosrvAction.h"
+#include "GeosrvAction.h"
 
 
-bool GesosrvAction::verifyParam(string param, int errorId, string errorMsg)
+bool GeosrvAction::verifyParam(string param, int errorId, string errorMsg)
 {
     if ( !param.empty() )
         return true;
@@ -10,19 +10,19 @@ bool GesosrvAction::verifyParam(string param, int errorId, string errorMsg)
     return false;
 }
 
-void GesosrvAction::logAction()
+void GeosrvAction::logAction()
 {
     string logMsg = this->getLogParams();
     LogManager::getInstance()->write(logMsg, LOG_INFO);
 }
 
-void GesosrvAction::processSuccess(string result)
+void GeosrvAction::processSuccess(string result)
 {
     this->logAction();
     this->sendSuccess(result);
 }
 
-void GesosrvAction::processError(int errorId, string errorMsg)
+void GeosrvAction::processError(int errorId, string errorMsg)
 {
     this->sendError(errorId, errorMsg);
     string logMsg = this->getLogParams();

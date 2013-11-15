@@ -3,9 +3,9 @@
 
 #include "daework-include.h"
 #include "daework-kernel.h"
-#include "GesosrvAction.h"
+#include "GeosrvAction.h"
 
-class GetPopulationAction : public GesosrvAction
+class GetPopulationAction : public GeosrvAction
 {
     public:
         static  GetPopulationAction *createHandler();

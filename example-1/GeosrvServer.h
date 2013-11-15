@@ -1,21 +1,21 @@
-#ifndef GESOSRVSERVER_H_
-#define GESOSRVSERVER_H_
+#ifndef GEOSRVSERVER_H_
+#define GEOSRVSERVER_H_
 
 #include "daework-include.h"
 #include "daework-kernel.h"
 
-class GesosrvServer  : public Server
+class GeosrvServer  : public Server
 {
         public:
 
                 Dispatcher *dispatcherObject;
 
         public:
-                GesosrvServer(const char *cfgFilePath, const char *env, const char *module):Server(cfgFilePath, env, module){};
+                GeosrvServer(const char *cfgFilePath, const char *env, const char *module):Server(cfgFilePath, env, module){};
 
                 void init();
                 Thread *createThreadObject();
                 Dispatcher *createDispatcherObject();
 
 };
-#endif /* GESOSRVSERVER_H_ */
+#endif /* GEOSRVSERVER_H_ */

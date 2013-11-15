@@ -1,11 +1,11 @@
-#include "GesosrvDispatcher.h"
+#include "GeosrvDispatcher.h"
 #include "GetCapitalAction.h"
 #include "GetAreaAction.h"
 #include "GetPopulationAction.h"
 
 
 
-Action *GesosrvDispatcher::getHandler(string action)
+Action *GeosrvDispatcher::getHandler(string action)
 {
 
         //Esto será una tabla o una clase o similar

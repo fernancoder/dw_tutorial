@@ -1,6 +1,6 @@
-#include "GesosrvThread.h"
+#include "GeosrvThread.h"
 
-void GesosrvThread::init()
+void GeosrvThread::init()
 {
 
 }

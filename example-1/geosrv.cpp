@@ -1,7 +1,7 @@
 #include <getopt.h>
 
 #include "daework-kernel.h"
-#include "GesosrvServer.h"
+#include "GeosrvServer.h"
 
 
 const char* config_filename = NULL;
@@ -28,7 +28,7 @@ void verifyParams (int argc, char **argv)
             { NULL, 0, NULL, 0 }
         };
 
-        const char* program_name = "gesosrv";
+        const char* program_name = "geosrv";
         int next_option;
 
         do {
@@ -61,7 +61,7 @@ int main (int argc, char **argv)
 
     char cfgFilePath[512];
     if ( config_filename == NULL )
-        strcpy(cfgFilePath, "./gesosrv.ini");
+        strcpy(cfgFilePath, "./geosrv.ini");
     else
         strcpy(cfgFilePath, config_filename);
 
@@ -70,7 +70,7 @@ int main (int argc, char **argv)
     if ( appEnv == NULL )
         appEnv = "des";    
     
-    GesosrvServer *server = new GesosrvServer(cfgFilePath, appEnv, "main");
+    GeosrvServer *server = new GeosrvServer(cfgFilePath, appEnv, "main");
     Daemonizer::daemonize(server,asDaemon==1);
 
     return 0;

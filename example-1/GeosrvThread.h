@@ -1,13 +1,13 @@
-#ifndef GESOSRVTHREAD_H_
-#define GESOSRVTHREAD_H_
+#ifndef GEOSRVTHREAD_H_
+#define GEOSRVTHREAD_H_
 
 #include "daework-kernel.h"
 
-class GesosrvThread : public Thread
+class GeosrvThread : public Thread
 {
         public:
                 void init();
 
 };
 
-#endif /* GESOSRVTHREAD_H_ */
+#endif /* GEOSRVTHREAD_H_ */
