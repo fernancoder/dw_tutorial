@@ -1,0 +1,7 @@
+#include "GeosrvThread.h"
+
+void GeosrvThread::init()
+{
+    this->geographicalInformator = new GeographicalInformator(getCmdLineParam("data_filename"));
+    this->geographicalInformator->init();
+}
