@@ -8,8 +8,6 @@
 Action *GeosrvDispatcher::getHandler(string action)
 {
 
-        //Esto será una tabla o una clase o similar
-
         if ( action.compare("getCapital") == 0 )
                 return GetCapitalAction::createHandler();
 
