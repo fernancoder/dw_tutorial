@@ -17,8 +17,8 @@ void GetCapitalAction::execute()
 	return;
     }
 
-    GeographicalInformator *geographicalInformator = ((GeosrvThread *)(this->getThread()))->getGeographicalInformator();
-        
+    GeographicalInformator *geographicalInformator = ((GeosrvThread *)(this->getThread()))->getGeographicalInformator();        
+    
     string country = this->getRequestParam("country");
     if ( geographicalInformator->verifyCountry(country) )
     {

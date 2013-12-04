@@ -2,6 +2,6 @@
 
 void GeosrvThread::init()
 {
-    this->geographicalInformator = new GeographicalInformator(getCmdLineParam("data_filename"));
+    this->geographicalInformator = new GeographicalInformator(CmdLineParamManager::getInstance()->getCmdLineParam("data_filename"));
     this->geographicalInformator->init();
 }

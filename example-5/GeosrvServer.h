@@ -3,6 +3,7 @@
 
 #include "daework-include.h"
 #include "daework-kernel.h"
+#include "daework-support.h"
 #include "GeographicalInformator.h"
 
 class GeosrvServer  : public Server

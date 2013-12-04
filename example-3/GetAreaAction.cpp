@@ -16,7 +16,7 @@ void GetAreaAction::execute()
 	return;
     }
 
-    GeographicalInformator *geographicalInformator = new GeographicalInformator(getCmdLineParam("data_filename"));
+    GeographicalInformator *geographicalInformator = new GeographicalInformator(CmdLineParamManager::getInstance()->getCmdLineParam("data_filename"));
     if ( !geographicalInformator->init() )
     {
         this->processError(1002,"Geographical data file doesn't exsit");

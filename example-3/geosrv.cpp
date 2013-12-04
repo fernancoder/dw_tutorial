@@ -1,6 +1,7 @@
 #include <getopt.h>
 
 #include "daework-kernel.h"
+#include "daework-support.h"
 #include "GeosrvServer.h"
 
 
@@ -83,7 +84,7 @@ int main (int argc, char **argv)
         strcpy(dataFilePath, data_filename);
    
     GeosrvServer *server = new GeosrvServer(cfgFilePath, appEnv, "main");
-    server->setCmdLineParam("data_filename",dataFilePath);
+    CmdLineParamManager::getInstance()->setCmdLineParam("data_filename",dataFilePath);
     Daemonizer::daemonize(server,asDaemon==1);
 
     return 0;
